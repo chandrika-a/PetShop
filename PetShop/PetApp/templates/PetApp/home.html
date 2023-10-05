@@ -1,1 +1,15 @@
-vgrbgytb
+<!DOCTYPE html>  
+<html>  
+   <head>  
+      <title>Heading elements</title>  
+   </head>  
+   <body>  
+      <a href="/">All</a>
+      <a href="/Dog">Dog</a>
+      <a href="/Cat">Cat</a>
+      <h1>Count - {{count}} </h1>  
+      {% for pet in pets%}
+         <p>{{pet.name}} - {{pet.type}}</p>
+      {% endfor %}
+   </body>  
+</html>  

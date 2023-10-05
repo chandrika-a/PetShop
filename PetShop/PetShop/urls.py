@@ -16,9 +16,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from PetApp.views import index
+from PetApp.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', index)
+    path('<str:kind>/', get_all),
+    path('', get_all),
 ]
