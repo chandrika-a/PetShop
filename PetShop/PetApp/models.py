@@ -15,3 +15,7 @@ class Pet(models.Model):
 
     def __str__(self):
         return self.name
+
+class Review(models.Model):
+    star = models.IntegerField()
+    comment = models.TextField()
